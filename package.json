@@ -1,0 +1,26 @@
+{
+    "name": "aml",
+    "displayName": "ArchieML",
+    "description": "An Archie Markup Language syntax highlighter for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "massivedanger",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "aml",
+            "aliases": ["ArchieML", "aml"],
+            "extensions": [".aml",".AML"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "aml",
+            "scopeName": "source.aml",
+            "path": "./syntaxes/aml.tmLanguage"
+        }]
+    }
+}
